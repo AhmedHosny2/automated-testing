@@ -28,7 +28,7 @@ def login_to_site(driver, site_url, username, password):
     time.sleep(2)
 
 
-def main(username, password):
+def signIn(username, password):
     driver = setup_driver()
     login_to_site(driver,
                   "https://nondescript-loaf.demo.prestashop.com/en/login?back=https%3A%2F%2Fnondescript-loaf.demo.prestashop.com%2Fen%2Flogin%3Fback%3Dhttps%253A%252F%252Fnondescript-loaf.demo.prestashop.com%252Fen%252Flogin%253Fback%253Dhttps%25253A%25252F%25252Fnondescript-loaf.demo.prestashop.com%25252Fen%25252F%25253Fid_module_showcased%25253Dundefined",
@@ -37,4 +37,4 @@ if __name__ == "__main__":
     # Replace these with actual values
     username = "a@a.com"
     password = "P,V2t@+%d^UnQBt"
-    main(username, password)
+    signIn(username, password)
