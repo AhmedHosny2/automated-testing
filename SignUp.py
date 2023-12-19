@@ -42,7 +42,7 @@ def sign_up_to_site(driver, site_url, gender_type, first_name, last_name, email,
 def signUp(gender_type, first_name, last_name, email, password, agree_tac, agree_customer_privacy):
     driver = setup_driver()
     sign_up_to_site(driver,
-                    "https://nondescript-loaf.demo.prestashop.com/en/registration", gender_type, first_name, last_name,
+                    "https://unkempt-coil.demo.prestashop.com/en/registration", gender_type, first_name, last_name,
                     email, password, agree_tac, agree_customer_privacy)
     return driver
 
