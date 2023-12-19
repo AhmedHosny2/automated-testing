@@ -8,28 +8,26 @@ Before running the script, make sure you have the following installed:
     Python (version 3.x)
     Selenium package
 
+We recommend using Pycharm as your IDE for this project.
+## Installation
 You can install the Selenium package using the following command:
 
-bash
-
-pip install selenium
+```pip install selenium```
 
 Additionally, download the appropriate WebDriver executable (geckodriver for Firefox or chromedriver for Chrome) and ensure it is available in your system's PATH.
 Setup
 
 Clone this repository:
 
-bash
+```bash
 
-git clone https://github.com/yourusername/automated-testing.git
+git clone https://github.com/AhmedHosny2/automated-testing.git
 cd automated-testing
 
 Run the setup.py script to perform the initial setup:
 
-bash
-
 python setup.py
-
+```
 This script will set up the necessary dependencies and run the sign-up process once.
 Running Tests
 
