@@ -17,7 +17,7 @@ def editEmail(newEmail):
     email_feild = driver.find_element("id", "field-email")
     email_feild.clear()
     email_feild.send_keys(newEmail)
-    password_field = driver.find_element("id","field-password")
+    password_field = driver.find_element("id", "field-password")
     password_field.send_keys(password)
     agree_tac_checkbox = driver.find_element("name", "psgdpr")
     agree_customer_privacy_checkbox = driver.find_element("name", "customer_privacy")
@@ -28,12 +28,10 @@ def editEmail(newEmail):
     print(save_button.text)
     save_button.click()
 
-
-
     time.sleep(2)
 
 
 if __name__ == "__main__":
     # Replace these with actual values
-    newEmail ="h@h.com"
+    newEmail = "h@h.com"
     editEmail(newEmail)
