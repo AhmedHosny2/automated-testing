@@ -7,7 +7,6 @@ import time
 from setUpDrive import setup_driver
 
 
-
 def login_to_site(driver, site_url, username, password):
     driver.get(site_url)
     driver.implicitly_wait(25)
@@ -26,8 +25,8 @@ def login_to_site(driver, site_url, username, password):
 def signIn(username, password):
     driver = setup_driver()
     login_to_site(driver,
-                  "https://unkempt-coil.demo.prestashop.com/en/login?back=https%3A%2F%2Funkempt-coil.demo.prestashop.com%2Fen%2Flogin%3Fback%3Dhttps%253A%252F%252Funkempt-coil.demo.prestashop.com%252Fen%252Fregistration" ,
-                 username, password)
+                  "https://fanatical-shame.demo.prestashop.com/en/login?back=https%3A%2F%2Ffanatical-shame.demo.prestashop.com%2Fen%2F%3Fid_module_showcased%3Dundefined",
+                  username, password)
     return driver
 
 

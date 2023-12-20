@@ -1,10 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import time
-from setUpDrive import setup_driver
+# from setUpDrive import setup_driver
 
 
-def sign_up_to_site(driver, site_url, gender_type, first_name, last_name, email, password, agree_tac,
+def sign_up(driver, site_url, gender_type, first_name, last_name, email, password, agree_tac,
                     agree_customer_privacy):
     driver.get(site_url)
     driver.implicitly_wait(25)
@@ -39,22 +39,25 @@ def sign_up_to_site(driver, site_url, gender_type, first_name, last_name, email,
     time.sleep(2)
 
 
-def signUp(gender_type, first_name, last_name, email, password, agree_tac, agree_customer_privacy):
-    driver = setup_driver()
-    sign_up_to_site(driver,
-                    "https://unkempt-coil.demo.prestashop.com/en/registration", gender_type, first_name, last_name,
-                    email, password, agree_tac, agree_customer_privacy)
-    return driver
+# def sign_up_call(gender_type, first_name, last_name, email, password, agree_tac, agree_customer_privacy):
+#     driver = setup_driver()
+#     sign_up_to_site(driver,
+#                     "https://unwieldy-order.demo.prestashop.com/en/registration", gender_type, first_name, last_name,
+#                     email, password, agree_tac, agree_customer_privacy)
+#     return driver
 
-
-if __name__ == "__main__":
-    # Replace these with actual values
-    gender_type = "male"  # or "Mrs" or "Miss"
-    first_name = "Ahmed"
-    last_name = "Yehia"
-    email = "a@a.com"
-    password = "P,V2t@+%d^UnQBt"
-    agree_tac = True
-    agree_customer_privacy = True
-
-    signUp(gender_type, first_name, last_name, email, password, agree_tac, agree_customer_privacy)
+#
+# if __name__ == "__main__":
+#     # Replace these with actual values
+#     gender_type = "male"  # or "Mrs" or "Miss"
+#     first_name = "Ahmed"
+#     last_name = "Yehia"
+#     email = "a@a.com"
+#     password = "P,V2t@+%d^UnQBt"
+#     agree_tac = True
+#     agree_customer_privacy = True
+#     driver = setup_driver()
+#
+#     site_url = "https://unwieldy-order.demo.prestashop.com/en/registration"
+#     sign_up(driver, site_url, gender_type, first_name, last_name, email, password, agree_tac, agree_customer_privacy)
+# # pytest
