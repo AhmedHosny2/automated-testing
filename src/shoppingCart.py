@@ -1,6 +1,6 @@
 # main_script.py
 
-from signin import signIn
+from sign_up_script import signIn
 import time
 
 # Replace these with actual values
