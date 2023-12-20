@@ -16,7 +16,7 @@ def test_correct_new_email():
     try:
         driver = setup_driver()
         newEmail = "h@h.com"
-        resultedEmail, success_alert = editEmail(driver, site_url, "h@h.com", password, newEmail)
+        resultedEmail, success_alert = editEmail(driver, site_url, "success@a.com", password, newEmail)
         assert success_alert == "Information successfully updated."
 
         assert resultedEmail == newEmail
@@ -32,7 +32,7 @@ def test_no_new_email():
     try:
         driver = setup_driver()
         newEmail = ""
-        resultedEmail, success_alert = editEmail(driver, site_url, "h@h.com", password, newEmail)
+        resultedEmail, success_alert = editEmail(driver, site_url, email, password, newEmail)
         assert success_alert != "Information successfully updated."
     finally:
         driver.quit()

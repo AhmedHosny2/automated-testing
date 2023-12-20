@@ -10,21 +10,21 @@ email = "success@a.com"
 password = "P,V2t@+%d^UnQBt"
 
 
+def test_successful_login():
+    try:
+        driver = setup_driver()
+        sign_in(driver, site_url, email, password)
+        assert driver.current_url == site_url
+    finally:
+        driver.quit()
+
+
 def test_incorrect_password():
     try:
         driver = setup_driver()
         incorrect_password = "incorrect_password"
         sign_in(driver, site_url, email, incorrect_password)
         assert driver.current_url != site_url
-    finally:
-        driver.quit()
-
-
-def test_successful_login():
-    try:
-        driver = setup_driver()
-        sign_in(driver, site_url, email, password)
-        assert driver.current_url == site_url
     finally:
         driver.quit()
 
