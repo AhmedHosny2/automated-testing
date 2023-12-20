@@ -39,8 +39,3 @@ Let the Magic Begin!
 
 Sit back, relax, and watch the automated tests do their magic! 🚀
 
-kotlin
-
-
-Copy and paste this into your `README.md` file, and it should provide a quick and fun guide on how to set up and run the automated tests.
-
