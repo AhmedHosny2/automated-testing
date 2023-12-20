@@ -1,49 +1,46 @@
-Automated Testing with Selenium
+# Automated Testing with Selenium and Pytest
 
-This repository contains a Selenium script for automated testing on a website using Python.
-Prerequisites
+This project demonstrates automated testing using Selenium and Pytest for a PrestaShop demo site.
 
-Before running the script, make sure you have the following installed:
+## Prerequisites
 
-    Python (version 3.x)
-    Selenium package
+Make sure you have the following dependencies installed:
 
-We recommend using Pycharm as your IDE for this project.
-## Installation
-You can install the Selenium package using the following command:
-
-```pip install selenium```
-
-Additionally, download the appropriate WebDriver executable (geckodriver for Firefox or chromedriver for Chrome) and ensure it is available in your system's PATH.
-Setup
-
-Clone this repository:
-
-```bash
-
-git clone https://github.com/AhmedHosny2/automated-testing.git
-cd automated-testing
-
-Run the setup.py script to perform the initial setup:
-
-python setup.py
 ```
-This script will set up the necessary dependencies and run the sign-up process once.
-Running Tests
+pip install selenium pytest python-dotenv
+```
+Configuration
 
-To run specific tests, you can execute the corresponding Python script. Tests that require a sign-in will automatically perform the sign-in process before executing.
+    Create a .env file in both the src and test folders.
 
-Example:
+    Add the following line to the .env file, replacing <YOUR_SITE_URL> with the URL obtained from the PrestaShop demo site:
 
-To run the shopping cart test:
+    dotenv
 
-bash
+    SITE_URL=<YOUR_SITE_URL>
 
-python shopping_cart_test.py
+    To get the URL:
+        Open the PrestaShop demo site.
+        Click on the "Log in" button.
+        Open the browser's inspector.
+        Navigate to "No account? Create one here" and copy the URL.
 
-Notes
+Running the Tests
 
-    Make sure to customize the WebDriver setup in the setup_driver() function in setup.py according to your browser preference.
-    If you encounter any issues, check the error messages in the console for details.
+    Open a terminal and navigate to the project directory.
 
-Feel free to contribute or report issues!
+    Run the test script:
+
+    bash
+
+    python run_tests.py
+
+Let the Magic Begin!
+
+Sit back, relax, and watch the automated tests do their magic! 🚀
+
+kotlin
+
+
+Copy and paste this into your `README.md` file, and it should provide a quick and fun guide on how to set up and run the automated tests.
+
