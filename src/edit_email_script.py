@@ -57,7 +57,6 @@ def editEmail(driver, site_url, email, password, newEmail):
 if __name__ == "__main__":
     load_dotenv()
     site_url = os.getenv("SITE_URL")
-    print(site_url)
     email =  "h@h.com"
     password = "P,V2t@+%d^UnQBt"
     driver = setup_driver()
